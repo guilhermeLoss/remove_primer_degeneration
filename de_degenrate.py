@@ -5,7 +5,7 @@ from itertools import product
 import sys
 
 input_file = sys.argv[1]
-output_file = sys.argv[1].split('.')[0] + '.degerate_primer.fas'
+output_file = sys.argv[1].split('.')[0] + '.degenerate_primer.fas'
 
 degenerate_bases = {
          "R": "AG",
