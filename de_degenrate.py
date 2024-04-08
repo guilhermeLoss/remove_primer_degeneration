@@ -31,6 +31,6 @@ for record in SeqIO.parse(input_file, "fasta"):
         non_degenerate_primers.append(non_degenerate_primer)
         c+=1
 
-    with open(output_file, "w") as f:
+    with open(output_file, "a") as f:
         for i in non_degenerate_primers:
              f.write(f">{i.id}\n{i.seq}\n")
